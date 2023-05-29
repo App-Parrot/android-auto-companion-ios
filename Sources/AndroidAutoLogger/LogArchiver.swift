@@ -16,7 +16,6 @@ import Foundation
 import os.log
 
 /// Archive logs to persistent storage.
-@available(macOS 10.15, *)
 public actor LogArchiver: LoggerDelegate {
   /// Log for reporting logging errors.
   static private let log = OSLog(
