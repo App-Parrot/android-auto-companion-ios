@@ -43,7 +43,6 @@ public class SystemLogHandler: LoggerDelegate {
 }
 
 /// System log extensions for Logger.Level.
-@available(macOS 10.15, *)
 extension Logger.Level {
   /// Get the corresponding `OSLogType`.
   var osLogType: OSLogType {
