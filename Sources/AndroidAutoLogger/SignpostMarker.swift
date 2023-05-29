@@ -15,7 +15,6 @@
 import Foundation
 
 /// A signpost marker with a named signpost and an event role.
-@available(macOS 10.15, *)
 public struct SignpostMarker {
   /// Name of the signpost.
   public let name: StaticString
