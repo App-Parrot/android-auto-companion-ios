@@ -16,7 +16,6 @@ import Foundation
 import os.log
 
 /// Handler which feeds the logs to system log using os_log.
-@available(macOS 10.15, *)
 public class SystemLogHandler: LoggerDelegate {
   /// Log the record to the system log.
   ///
