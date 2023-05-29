@@ -23,7 +23,6 @@ import os.log
 ///
 /// This protocol is only intended for private use, but is marked internal here to accommodate
 /// unit testing.
-@available(macOS 12.0, *)
 protocol SignpostMetricsHandler {
   /// Indicates whether this handler is valid for posting metrics.
   var isValid: Bool { get }
