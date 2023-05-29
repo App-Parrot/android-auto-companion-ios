@@ -51,7 +51,6 @@ protocol SignpostMetricsHandler {
 /// provides a fallback that logs error messages if not.
 ///
 /// An instance represents a single category and role used for posting named signposts.
-@available(macOS 12.0, *)
 public struct SignpostMetrics {
   /// Indicates whether signpost metric logging is available on the current system.
   public static let isSystemSupported: Bool = {
@@ -142,7 +141,6 @@ public struct SignpostMetrics {
 ///
 /// Calling methods on this implementation do not log any metrics. Rather they provide a safe
 /// implementation that simply logs errors for such attempts.
-@available(macOS 12.0, *)
 private struct UnavailableSignpostMetrics: SignpostMetricsHandler {
   static let log = Logger(for: UnavailableSignpostMetrics.self)
 
